@@ -1,0 +1,154 @@
+2012-11-03 08:14:47+0000 [scrapy] INFO: Scrapy 0.16.0 started (bot: scrapybot)
+2012-11-03 08:14:47+0000 [scrapy] DEBUG: Enabled extensions: LogStats, TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
+2012-11-03 08:14:47+0000 [scrapy] DEBUG: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, RedirectMiddleware, CookiesMiddleware, HttpCompressionMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2012-11-03 08:14:48+0000 [scrapy] DEBUG: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2012-11-03 08:14:48+0000 [scrapy] DEBUG: Enabled item pipelines: 
+2012-11-03 08:14:48+0000 [baidu_youji] INFO: Spider opened
+2012-11-03 08:14:48+0000 [scrapy] DEBUG: Telnet console listening on 0.0.0.0:6023
+2012-11-03 08:14:48+0000 [scrapy] DEBUG: Web service listening on 0.0.0.0:6080
+2012-11-03 08:14:52+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=2&pn=180&rn=20&t=> (referer: None)
+2012-11-03 08:14:52+0000 [scrapy] INFO: http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=2&pn=180&rn=20&t=  读取游记信息错误
+2012-11-03 08:14:55+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=1&pn=6480&rn=20&t=> (referer: None)
+2012-11-03 08:14:58+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=1&pn=6200&rn=20&t=> (referer: None)
+2012-11-03 08:14:59+0000 [baidu_youji] INFO: Closing spider (finished)
+2012-11-03 08:14:59+0000 [baidu_youji] INFO: Dumping Scrapy stats:
+	{'downloader/request_bytes': 779,
+	 'downloader/request_count': 3,
+	 'downloader/request_method_count/GET': 3,
+	 'downloader/response_bytes': 39118,
+	 'downloader/response_count': 3,
+	 'downloader/response_status_count/200': 3,
+	 'finish_reason': 'finished',
+	 'finish_time': datetime.datetime(2012, 11, 3, 8, 14, 59, 192644),
+	 'log_count/DEBUG': 9,
+	 'log_count/INFO': 4,
+	 'response_received_count': 3,
+	 'scheduler/dequeued': 3,
+	 'scheduler/dequeued/memory': 3,
+	 'scheduler/enqueued': 3,
+	 'scheduler/enqueued/memory': 3,
+	 'start_time': datetime.datetime(2012, 11, 3, 8, 14, 48, 17909)}
+2012-11-03 08:14:59+0000 [baidu_youji] INFO: Spider closed (finished)
+2012-11-03 08:15:40+0000 [scrapy] INFO: Scrapy 0.16.0 started (bot: scrapybot)
+2012-11-03 08:15:40+0000 [scrapy] DEBUG: Enabled extensions: LogStats, TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
+2012-11-03 08:15:40+0000 [scrapy] DEBUG: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, RedirectMiddleware, CookiesMiddleware, HttpCompressionMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2012-11-03 08:15:40+0000 [scrapy] DEBUG: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2012-11-03 08:15:40+0000 [scrapy] DEBUG: Enabled item pipelines: 
+2012-11-03 08:15:40+0000 [baidu_youji] INFO: Spider opened
+2012-11-03 08:15:40+0000 [scrapy] DEBUG: Telnet console listening on 0.0.0.0:6023
+2012-11-03 08:15:40+0000 [scrapy] DEBUG: Web service listening on 0.0.0.0:6080
+2012-11-03 08:15:42+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=2&pn=6860&rn=20&t=> (referer: None)
+2012-11-03 08:15:48+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=0&pn=2400&rn=20&t=> (referer: None)
+2012-11-03 08:15:54+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=1&pn=2160&rn=20&t=> (referer: None)
+2012-11-03 08:15:55+0000 [baidu_youji] INFO: Closing spider (finished)
+2012-11-03 08:15:55+0000 [baidu_youji] INFO: Dumping Scrapy stats:
+	{'downloader/request_bytes': 780,
+	 'downloader/request_count': 3,
+	 'downloader/request_method_count/GET': 3,
+	 'downloader/response_bytes': 71408,
+	 'downloader/response_count': 3,
+	 'downloader/response_status_count/200': 3,
+	 'finish_reason': 'finished',
+	 'finish_time': datetime.datetime(2012, 11, 3, 8, 15, 55, 224138),
+	 'log_count/DEBUG': 9,
+	 'log_count/INFO': 3,
+	 'response_received_count': 3,
+	 'scheduler/dequeued': 3,
+	 'scheduler/dequeued/memory': 3,
+	 'scheduler/enqueued': 3,
+	 'scheduler/enqueued/memory': 3,
+	 'start_time': datetime.datetime(2012, 11, 3, 8, 15, 40, 416608)}
+2012-11-03 08:15:55+0000 [baidu_youji] INFO: Spider closed (finished)
+2012-11-03 08:20:24+0000 [scrapy] INFO: Scrapy 0.16.0 started (bot: scrapybot)
+2012-11-03 08:20:24+0000 [scrapy] DEBUG: Enabled extensions: LogStats, TelnetConsole, CloseSpider, WebService, CoreStats, SpiderState
+2012-11-03 08:20:24+0000 [scrapy] DEBUG: Enabled downloader middlewares: HttpAuthMiddleware, DownloadTimeoutMiddleware, UserAgentMiddleware, RetryMiddleware, DefaultHeadersMiddleware, RedirectMiddleware, CookiesMiddleware, HttpCompressionMiddleware, ChunkedTransferMiddleware, DownloaderStats
+2012-11-03 08:20:24+0000 [scrapy] DEBUG: Enabled spider middlewares: HttpErrorMiddleware, OffsiteMiddleware, RefererMiddleware, UrlLengthMiddleware, DepthMiddleware
+2012-11-03 08:20:24+0000 [scrapy] DEBUG: Enabled item pipelines: 
+2012-11-03 08:20:24+0000 [baidu_youji] INFO: Spider opened
+2012-11-03 08:20:24+0000 [scrapy] DEBUG: Telnet console listening on 0.0.0.0:6023
+2012-11-03 08:20:24+0000 [scrapy] DEBUG: Web service listening on 0.0.0.0:6080
+2012-11-03 08:20:28+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=2&pn=5480&rn=20&t=> (referer: None)
+2012-11-03 08:20:55+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=0&pn=9560&rn=20&t=> (referer: None)
+2012-11-03 08:21:10+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=2&pn=420&rn=20&t=> (referer: None)
+2012-11-03 08:21:10+0000 [scrapy] INFO: http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=2&pn=420&rn=20&t=  读取游记信息错误
+2012-11-03 08:21:13+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=2&pn=5180&rn=20&t=> (referer: None)
+2012-11-03 08:21:16+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=0&pn=5280&rn=20&t=> (referer: None)
+2012-11-03 08:21:19+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=0&pn=5380&rn=20&t=> (referer: None)
+2012-11-03 08:21:21+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=2&pn=1660&rn=20&t=> (referer: None)
+2012-11-03 08:21:24+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=0&pn=340&rn=20&t=> (referer: None)
+2012-11-03 08:21:28+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=2&pn=4380&rn=20&t=> (referer: None)
+2012-11-03 08:21:30+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=2&pn=840&rn=20&t=> (referer: None)
+2012-11-03 08:21:30+0000 [scrapy] INFO: http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=2&pn=840&rn=20&t=  读取游记信息错误
+2012-11-03 08:21:34+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=2&pn=5860&rn=20&t=> (referer: None)
+2012-11-03 08:21:36+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=0&pn=5140&rn=20&t=> (referer: None)
+2012-11-03 08:21:39+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=1&pn=6540&rn=20&t=> (referer: None)
+2012-11-03 08:21:42+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=0&pn=1380&rn=20&t=> (referer: None)
+2012-11-03 08:22:06+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=1&pn=8040&rn=20&t=> (referer: None)
+2012-11-03 08:22:38+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=1&pn=740&rn=20&t=> (referer: None)
+2012-11-03 08:22:42+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=0&pn=7360&rn=20&t=> (referer: None)
+2012-11-03 08:24:40+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=2&pn=2380&rn=20&t=> (referer: None)
+2012-11-03 08:24:41+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=2&pn=540&rn=20&t=> (referer: None)
+2012-11-03 08:24:41+0000 [scrapy] INFO: http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=2&pn=540&rn=20&t=  读取游记信息错误
+2012-11-03 08:24:44+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=2&pn=3980&rn=20&t=> (referer: None)
+2012-11-03 08:24:46+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=1&pn=1280&rn=20&t=> (referer: None)
+2012-11-03 08:24:48+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=1&pn=5920&rn=20&t=> (referer: None)
+2012-11-03 08:24:52+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=0&pn=2980&rn=20&t=> (referer: None)
+2012-11-03 08:24:54+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=0&pn=7540&rn=20&t=> (referer: None)
+2012-11-03 08:24:58+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=0&pn=5880&rn=20&t=> (referer: None)
+2012-11-03 08:25:01+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=2&pn=8220&rn=20&t=> (referer: None)
+2012-11-03 08:25:04+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=2&pn=5160&rn=20&t=> (referer: None)
+2012-11-03 08:25:07+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=2&pn=5580&rn=20&t=> (referer: None)
+2012-11-03 08:25:10+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=1&pn=5760&rn=20&t=> (referer: None)
+2012-11-03 08:25:16+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=0&pn=4660&rn=20&t=> (referer: None)
+2012-11-03 08:25:19+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=1&pn=1460&rn=20&t=> (referer: None)
+2012-11-03 08:25:21+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=1&pn=3120&rn=20&t=> (referer: None)
+2012-11-03 08:25:27+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=1&pn=6380&rn=20&t=> (referer: None)
+2012-11-03 08:25:28+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=2&pn=860&rn=20&t=> (referer: None)
+2012-11-03 08:25:28+0000 [scrapy] INFO: http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=2&pn=860&rn=20&t=  读取游记信息错误
+2012-11-03 08:25:33+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=0&pn=3800&rn=20&t=> (referer: None)
+2012-11-03 08:25:35+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=0&pn=260&rn=20&t=> (referer: None)
+2012-11-03 08:25:38+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=2&pn=4540&rn=20&t=> (referer: None)
+2012-11-03 08:25:41+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=1&pn=2360&rn=20&t=> (referer: None)
+2012-11-03 08:25:43+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=1&pn=2800&rn=20&t=> (referer: None)
+2012-11-03 08:25:45+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=2&pn=4600&rn=20&t=> (referer: None)
+2012-11-03 08:25:49+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=1&pn=340&rn=20&t=> (referer: None)
+2012-11-03 08:25:52+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=0&pn=280&rn=20&t=> (referer: None)
+2012-11-03 08:25:56+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=2&pn=8200&rn=20&t=> (referer: None)
+2012-11-03 08:25:59+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=1&pn=2660&rn=20&t=> (referer: None)
+2012-11-03 08:26:02+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=0&pn=8940&rn=20&t=> (referer: None)
+2012-11-03 08:26:06+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=0&pn=4920&rn=20&t=> (referer: None)
+2012-11-03 08:26:11+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=0&pn=5580&rn=20&t=> (referer: None)
+2012-11-03 08:26:18+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=1&pn=6560&rn=20&t=> (referer: None)
+2012-11-03 08:26:21+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=1&pn=7460&rn=20&t=> (referer: None)
+2012-11-03 08:26:24+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=1&pn=580&rn=20&t=> (referer: None)
+2012-11-03 08:26:27+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=1&pn=6300&rn=20&t=> (referer: None)
+2012-11-03 08:26:31+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=0&pn=1780&rn=20&t=> (referer: None)
+2012-11-03 08:26:34+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=1&pn=280&rn=20&t=> (referer: None)
+2012-11-03 08:26:37+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=2&pn=9760&rn=20&t=> (referer: None)
+2012-11-03 08:26:41+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=1&pn=640&rn=20&t=> (referer: None)
+2012-11-03 08:26:43+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=2&pn=2100&rn=20&t=> (referer: None)
+2012-11-03 08:26:46+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=1&pn=4320&rn=20&t=> (referer: None)
+2012-11-03 08:26:49+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=2&pn=7660&rn=20&t=> (referer: None)
+2012-11-03 08:26:53+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=2&pn=4820&rn=20&t=> (referer: None)
+2012-11-03 08:27:01+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=1&pn=1180&rn=20&t=> (referer: None)
+2012-11-03 08:27:05+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=0&pn=6800&rn=20&t=> (referer: None)
+2012-11-03 08:27:15+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=1&pn=9540&rn=20&t=> (referer: None)
+2012-11-03 08:27:19+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=1&pn=8260&rn=20&t=> (referer: None)
+2012-11-03 08:27:23+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=0&pn=8240&rn=20&t=> (referer: None)
+2012-11-03 08:27:29+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=2&pn=4020&rn=20&t=> (referer: None)
+2012-11-03 08:27:31+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=0&pn=7480&rn=20&t=> (referer: None)
+2012-11-03 08:27:34+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=2&pn=6740&rn=20&t=> (referer: None)
+2012-11-03 08:27:36+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=2&pn=5760&rn=20&t=> (referer: None)
+2012-11-03 08:27:39+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=0&pn=5180&rn=20&t=> (referer: None)
+2012-11-03 08:27:43+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=0&pn=3640&rn=20&t=> (referer: None)
+2012-11-03 08:27:46+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=1&pn=9600&rn=20&t=> (referer: None)
+2012-11-03 08:27:50+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=0&pn=1840&rn=20&t=> (referer: None)
+2012-11-03 08:27:53+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=2&pn=6280&rn=20&t=> (referer: None)
+2012-11-03 08:28:03+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=1&pn=4220&rn=20&t=> (referer: None)
+2012-11-03 08:28:06+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=2&pn=2000&rn=20&t=> (referer: None)
+2012-11-03 08:28:06+0000 [scrapy] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2012-11-03 08:28:06+0000 [baidu_youji] INFO: Closing spider (shutdown)
+2012-11-03 08:28:09+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=0&pn=2360&rn=20&t=> (referer: None)
+2012-11-03 08:28:18+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=0&pn=6740&rn=20&t=> (referer: None)
+2012-11-03 08:28:21+0000 [scrapy] INFO: Received SIGINT twice, forcing unclean shutdown
+2012-11-03 08:28:21+0000 [baidu_youji] DEBUG: Crawled (200) <GET http://lvyou.baidu.com/search/ajax/getsearchnotes?format=ajax&type=0&pn=8660&rn=20&t=> (referer: None)
