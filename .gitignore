@@ -2,4 +2,4 @@
 *.pyc
 *.swp
 *~
-crawled-data
+crawled-data/*
