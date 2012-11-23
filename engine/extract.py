@@ -39,6 +39,36 @@ def __get_json_item_by_key(data=None, key=None, is_get_list=False, splitter='__'
 def get_html_items_by_xpath(data=None, xpath=None):
     pass
 
+def show_sample(db='', table_name='', field='', sample_count=5, need_json_loads=True, printing=True):
+    if not (db and table_name and field): return False
+    result = list()
+    try:
+        conn = sqlite3.connect(db)
+        total = conn.execute('select count(*) from %s' % table_name).fetchone()[0]
+        rows_range = random.sample(range(1, total+1), sample_count)
+        for row_id in rows_range:
+            field_status = dict()
+            query_str = 'select %s from %s where rowid=%d' % (field, table_name, row_id)
+            row = conn.execute(query_str).fetchone()
+            if row[0] is None: continue
+            field_data = json.loads(str(row[0])) if need_json_loads and row[0]  else str(row[0])
+            field_status['row_id'] = row_id
+            field_status['field_to_be_checked'] = field
+            field_status['data_type'] = type(field_data)
+            field_status['data_lenth_raw'] = len(row[0])
+            field_status['data_content_raw'] = row[0]
+            field_status['data_lenth_loaded'] = len(field_data)
+            field_status['data_content_loaded'] = field_data
+            result.append(field_status)
+            if printing:
+                for key in field_status.keys():
+                    print key, " : ", field_status[key]
+                print '-------------------------------------------------------\n'
+        return result
+    except Exception, e:
+        print e
+        return False
+
 if __name__ == '__main__':
     conn = sqlite3.connect(r'D:\backup\database\sqlite\processing\baidu_lvyou.db')
     #total = conn.execute('select count(*) from jingdian').fetchone()[0]

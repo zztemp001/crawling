@@ -1,11 +1,11 @@
 #coding=utf-8
 
-import random, json, pickle
-from engine.extract import extract_all
+import random, json, pickle, time
+from engine.extract import extract_all, show_sample
 from engine.prepair import init_db
 from engine.output import save_dict_as_row
 
-DEBUG = False
+DEBUG = True
 
 #将原始的json数据生成一个初步表
 def step_01():
@@ -78,5 +78,82 @@ def step_02():
         except Exception, e:
             print e
 
+#从pic_list字段中获取景点的相片信息
+def extract_from_jingdian(db=None, source_table=None, target_table=None, source_field=None, source_data_path=None, related_field=None, fields=None):
+    if not (db and source_table and target_table and source_field and related_field and fields): return False
+    DEBUG = False
+
+    conn = init_db(db, target_table, fields, drop_first=True)
+    total = conn.execute('select count(*) from %s' % source_table).fetchone()[0]
+    if DEBUG:
+        rows_range = random.sample(range(1, total+1), 20)
+    else:
+        rows_range = range(1, total+1)
+
+    for row_id in rows_range:
+        query_str = 'select %s, %s content from %s where rowid=%d' % (related_field[0], source_field, source_table, row_id)
+        try:
+            row = conn.execute(query_str).fetchone()
+            if not row[1]: continue
+            data = json.loads(str(row[1]))  #需要时
+            if source_data_path: data = data[source_data_path]
+            if type(data) is not list: data = [data]
+            for source_row_data in data:
+                new_row_data = extract_all(source_row_data, fields)
+                new_row_data[related_field[0]] = row[0]
+                save_dict_as_row(conn, target_table, new_row_data)
+                print '\n', row[0], 'Succeed...'
+                print new_row_data
+        except Exception, e:
+            print e
+
+
+def extract_from_jingdian_02(db=None, source_table=None, target_table=None, source_field=None, source_data_path=None, related_field=None, fields=None):
+    if not (db and source_table and target_table and source_field and related_field and fields): return False
+    DEBUG = False
+
+    conn = init_db(db, target_table, fields, drop_first=True)
+    total = conn.execute('select count(*) from %s' % source_table).fetchone()[0]
+    if DEBUG:
+        rows_range = random.sample(range(1, total+1), 30)
+    else:
+        rows_range = range(1, total+1)
+
+    for row_id in rows_range:
+        query_str = 'select %s, %s content from %s where rowid=%d' % (related_field[0], source_field, source_table, row_id)
+        try:
+            row = conn.execute(query_str).fetchone()
+            if not row[1]: continue
+            data = json.loads(str(row[1]))  #需要时
+            if source_data_path: data = data[source_data_path]
+            if type(data) is not list: data = [data]
+            for source_row_data in data:
+                new_row_data = dict()
+                new_row_data['feature'] = source_row_data
+                #new_row_data = extract_all(source_row_data, fields)
+                new_row_data[related_field[0]] = row[0]
+                save_dict_as_row(conn, target_table, new_row_data)
+                print '\n', row[0], 'Succeed...'
+                print new_row_data
+        except Exception, e:
+            print e
+
 if __name__ == '__main__':
-    step_02()
+    db = r'D:\backup\database\sqlite\processing\baidu_lvyou.db'
+    source_table = 'youji'
+    source_field = 'content'
+    source_data_path ='features_all'
+    target_table = 'youji_content_features'
+    related_field = ['note_id']
+    #fields = related_field + ['desc']
+    fields = related_field + ['feature']
+
+    start_time = time.time()
+
+    #show_sample(db=db, table_name=source_table, field=source_field)S
+
+    #extract_from_jingdian(db, source_table, target_table, source_field, source_data_path, related_field, fields)
+    extract_from_jingdian_02(db, source_table, target_table, source_field, source_data_path, related_field, fields)
+
+    time_used = time.time() - start_time
+    print '\n\n Total Time Used: %f' % time_used

@@ -12,28 +12,18 @@ def init_db(db='', table_name='', fields=None, drop_first=False):
     try:
         conn = sqlite3.connect(db)
         if drop_first:
-            #conn.execute('drop table %s' % table_name)
-            #conn.commit()
-            pass
+            try:
+                conn.execute('drop table %s' % table_name)
+                conn.commit()
+                print 'Table %s Dropped...' % table_name
+            except Exception, e:
+                print e
         if table_name and fields is not None:
             query_str = 'create table if not exists %s (%s)' % (table_name, ','.join([key + ' TEXT' for key in fields]))
             conn.execute(query_str)
             conn.commit()
+            print 'Table %s have been created' % table_name
         return conn
-    except Exception, e:
-        print e
-        return False
-
-def show_sample(db='', table_name='', field='', sample_count=1):
-    if not (db and table_name and field): return False
-    result = dict()
-    try:
-        conn = sqlite3.connect(db)
-        total = conn.execute('select count(*) from %s' % table_name).fetchone()[0]
-        rows_range = random.sample()
-        row_id = 8095
-        row = conn.execute('select scene_sname, main_info, content from jingdian where rowid=%d' % row_id).fetchone()
-        return result
     except Exception, e:
         print e
         return False
